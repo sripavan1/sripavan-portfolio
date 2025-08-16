@@ -4,125 +4,160 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sri Pavan Gali — Portfolio</title>
-  <meta name="description" content="Data Analyst portfolio: SQL, Python, Tableau, dashboards, and projects by Sri Pavan Gali." />
+  <meta name="description" content="Data Analyst portfolio: SQL, Python, Tableau dashboards, and projects by Sri Pavan Gali." />
+  <link rel="icon" href="data:," />
+  <!-- TailwindCSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    a { color:#0645AD; text-decoration: underline; } /* Word-style links */
-    .card { border-radius: 1rem; box-shadow: 0 8px 16px rgba(0,0,0,.08); }
+    /* Word‑style links (blue + underline) */
+    a { color:#0645AD; text-decoration: underline; }
+    .card { border-radius: 1rem; box-shadow: 0 12px 30px rgba(0,0,0,.08); }
+    .pill { border:1px solid rgba(0,0,0,.1); border-radius:999px; padding:.4rem .8rem; text-decoration:none; }
+    .pill:hover { background: rgba(0,0,0,.04); }
   </style>
+  <!-- Basic SEO / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sri Pavan Gali — Portfolio">
+  <meta property="og:description" content="Data Analyst portfolio: SQL, Python, Tableau dashboards, and analytics projects.">
+  <meta property="og:image" content="og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body class="bg-white text-zinc-900 antialiased">
-  <!-- Header -->
-  <header class="bg-white border-b">
-    <div class="max-w-5xl mx-auto px-4 py-5 flex items-center justify-between">
-      <h1 class="text-xl font-bold">Sri Pavan Gali</h1>
-      <nav class="flex gap-4 text-sm">
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-zinc-200">
+    <nav class="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="h-8 w-8 rounded-full bg-zinc-200"></div>
+        <span class="text-lg font-semibold">Sri Pavan Gali</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-5 text-sm">
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="max-w-5xl mx-auto px-4 py-10">
-    <h2 class="text-3xl font-bold">Data Analyst — SQL • Python • Tableau</h2>
-    <p class="mt-3 text-zinc-700 max-w-3xl">
-      I build clear, decision-ready dashboards and analyses. Strong SQL (joins, windows, CTEs), Python (pandas/NumPy), and dashboarding (Tableau/Power BI). 
+  <!-- HERO -->
+  <section class="mx-auto max-w-5xl px-4 pt-10 pb-6">
+    <h1 class="text-3xl md:text-4xl font-bold leading-tight">Data Analyst — SQL • Python • Tableau</h1>
+    <p class="mt-3 max-w-3xl text-zinc-700">
+      I build clear, decision‑ready dashboards and analyses. Strong SQL (joins, windows, CTEs), Python (pandas/NumPy), and dashboarding (Tableau/Power BI). 
       M.S. Information Systems, GMU (May 2025).
     </p>
-    <div class="mt-4 flex flex-wrap gap-3 text-sm">
-      <a href="mailto:gsripavan04@gmail.com">gsripavan04@gmail.com</a>
-      <a href="tel:+15717896203">+1 571-789-6203</a>
-      <a href="https://sripavan1.wordpress.com/" target="_blank">WordPress</a>
-      <a href="https://www.linkedin.com/in/sri-pavan-gali/" target="_blank">LinkedIn</a>
+    <div class="mt-4 flex flex-wrap items-center gap-3 text-sm">
+      <a class="pill" href="mailto:gsripavan04@gmail.com">gsripavan04@gmail.com</a>
+      <a class="pill" href="tel:+15717896203">+1 571‑789‑6203</a>
+      <a class="pill" href="https://sripavan1.wordpress.com/" target="_blank" rel="noopener">WordPress</a>
+      <a class="pill" href="https://www.linkedin.com/in/sri-pavan-gali/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="pill" href="#resume">Resume</a>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="max-w-5xl mx-auto px-4 py-10">
-    <h2 class="text-2xl font-semibold mb-6">Projects & Experience</h2>
+  <!-- PROJECTS -->
+  <section id="projects" class="mx-auto max-w-5xl px-4 pb-14">
+    <h2 class="text-2xl font-semibold mb-6">Projects &amp; Experience</h2>
 
     <!-- DC Metro -->
-    <div class="card p-6 mb-6">
-      <div class="flex flex-col md:flex-row md:items-baseline md:justify-between">
+    <article class="card p-6 mb-6">
+      <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
         <h3 class="text-lg font-semibold">
           DC Metro Ridership Dashboard
-          <a href="https://www.gopagify.com/page?id=2PACX-1vTTMRV6LdKnciMgPQ1AwH9cz2n4h_IKPRElvw0DWWGN-0v57eGP8vn1q0FySeghftrDZLp1O9F_M2kG" target="_blank">(Link)</a>
+          <a href="https://www.gopagify.com/page?id=2PACX-1vTTMRV6LdKnciMgPQ1AwH9cz2n4h_IKPRElvw0DWWGN-0v57eGP8vn1q0FySeghftrDZLp1O9F_M2kG" target="_blank" rel="noopener">(Link)</a>
         </h3>
-        <span class="text-sm font-bold text-black">Feb 2025</span>
+        <div class="text-sm font-bold text-black">Feb 2025</div>
       </div>
       <ul class="mt-3 list-disc pl-5 space-y-1 text-zinc-800">
         <li>Interactive dashboard for 2019–2024 ridership; filters by year, month, and transit mode.</li>
-        <li>Mode toggles (Bus, Rail, Grand Total) via checklist; contextual event markers.</li>
+        <li>Mode toggles (Bus, Rail, Grand Total) with contextual event markers.</li>
         <li>Dynamic insights table for busiest/quietest days; validated aggregates vs. source.</li>
+        <li>EDA, cleaning, and documentation; versioned updates with Git.</li>
       </ul>
-    </div>
+    </article>
 
     <!-- Cardiovascular -->
-    <div class="card p-6 mb-6">
-      <div class="flex flex-col md:flex-row md:items-baseline md:justify-between">
+    <article class="card p-6 mb-6">
+      <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
         <h3 class="text-lg font-semibold">
           Cardiovascular Disease Risk Analysis
-          <a href="https://drive.google.com/file/d/1I6V5Gf4QKilPrFdMQq8BjDOsfcX_nMCI/view?usp=drive_link" target="_blank">(Link)</a>
+          <a href="https://drive.google.com/file/d/1I6V5Gf4QKilPrFdMQq8BjDOsfcX_nMCI/view?usp=drive_link" target="_blank" rel="noopener">(Link)</a>
         </h3>
-        <span class="text-sm font-bold text-black">Nov 2023</span>
+        <div class="text-sm font-bold text-black">Nov 2023</div>
       </div>
       <ul class="mt-3 list-disc pl-5 space-y-1 text-zinc-800">
         <li>Analyzed U.S. NHIS data across age, gender, region, and lifestyle risk factors.</li>
-        <li>Visualized with R/Python (heatmaps, bars, pies); MySQL comparisons across regions.</li>
+        <li>R/Python visuals: heatmaps, bars, pies; MySQL comparisons across regions.</li>
       </ul>
-    </div>
+    </article>
 
     <!-- Fortune 500 -->
-    <div class="card p-6 mb-6">
-      <div class="flex flex-col md:flex-row md:items-baseline md:justify-between">
+    <article class="card p-6 mb-6">
+      <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
         <h3 class="text-lg font-semibold">
-          Fortune 500 Insights: A Data-Driven Exploration
-          <a href="https://sripavan1.wordpress.com/" target="_blank">(Link)</a>
+          Fortune 500 Insights: A Data‑Driven Exploration
+          <a href="https://sripavan1.wordpress.com/" target="_blank" rel="noopener">(Link)</a>
         </h3>
-        <span class="text-sm font-bold text-black">Aug 2024</span>
+        <div class="text-sm font-bold text-black">Aug 2024</div>
       </div>
       <ul class="mt-3 list-disc pl-5 space-y-1 text-zinc-800">
         <li>Analyzed 8 years of Fortune 500 data to uncover sector growth, revenue surges, and HQ shifts.</li>
         <li>Built Tableau dashboards highlighting revenue and profit patterns across U.S. states.</li>
       </ul>
-    </div>
+    </article>
 
     <!-- Adidas -->
-    <div class="card p-6 mb-6">
-      <div class="flex flex-col md:flex-row md:items-baseline md:justify-between">
+    <article class="card p-6 mb-6">
+      <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
         <h3 class="text-lg font-semibold">
           Adidas Sales Analysis | Tableau Dashboard
-          <a href="https://public.tableau.com/app/profile/pavan.g1561/viz/shared/ZXHZWDSGT" target="_blank">(Link)</a>
+          <a href="https://public.tableau.com/app/profile/pavan.g1561/viz/shared/ZXHZWDSGT" target="_blank" rel="noopener">(Link)</a>
         </h3>
-        <span class="text-sm font-bold text-black">Jan 2024</span>
+        <div class="text-sm font-bold text-black">Jan 2024</div>
       </div>
       <ul class="mt-3 list-disc pl-5 space-y-1 text-zinc-800">
         <li>Interactive Tableau dashboard for Adidas sales by region, year, category, and sales method.</li>
-        <li>Geographic heat map for state-level sales; KPIs for total and product-level performance.</li>
+        <li>Geographic heat map for state‑level sales; KPIs for total and product‑level performance.</li>
       </ul>
-    </div>
+    </article>
   </section>
 
-  <!-- About -->
-  <section id="about" class="max-w-5xl mx-auto px-4 py-10">
+  <!-- ABOUT -->
+  <section id="about" class="mx-auto max-w-5xl px-4 pb-14">
     <h2 class="text-2xl font-semibold mb-4">About Me</h2>
     <p class="text-zinc-700 max-w-3xl">
-      I’m a data analyst with a Master’s in Information Systems (GMU, May 2025). Skilled in SQL, Python, Tableau/Power BI, and data storytelling. I focus on building clear dashboards, validating datasets, and turning raw numbers into decision-ready insights.
+      I’m a data analyst with a Master’s in Information Systems (GMU, May 2025). Skilled in SQL, Python, Tableau/Power BI, and data storytelling. I focus on building clear dashboards, validating datasets, and turning raw numbers into decision‑ready insights.
     </p>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="max-w-5xl mx-auto px-4 py-10">
-    <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-    <p>Email: <a href="mailto:gsripavan04@gmail.com">gsripavan04@gmail.com</a></p>
-    <p>Phone: <a href="tel:+15717896203">+1 571-789-6203</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sri-pavan-gali/">linkedin.com/in/sri-pavan-gali</a></p>
+  <!-- RESUME (optional PDF link/preview) -->
+  <section id="resume" class="mx-auto max-w-5xl px-4 pb-14">
+    <h2 class="text-2xl font-semibold mb-4">Resume</h2>
+    <p>Download my resume: <a href="resume.pdf" download>resume.pdf</a></p>
+    <!-- If you commit resume.pdf, uncomment to preview inside the page
+    <div class="mt-4 aspect-[3/4] w-full">
+      <iframe class="w-full h-[80vh] rounded-lg border" src="resume.pdf" loading="lazy"></iframe>
+    </div> -->
   </section>
 
-  <footer class="text-center text-sm text-zinc-500 py-6 border-t mt-6">
+  <!-- CONTACT -->
+  <section id="contact" class="mx-auto max-w-5xl px-4 pb-16">
+    <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+    <div class="space-y-2">
+      <p>Email: <a href="mailto:gsripavan04@gmail.com">gsripavan04@gmail.com</a></p>
+      <p>Phone: <a href="tel:+15717896203">+1 571‑789‑6203</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/sri-pavan-gali/" target="_blank" rel="noopener">linkedin.com/in/sri-pavan-gali</a></p>
+    </div>
+    <!-- Optional no‑backend contact form via Formspree
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="mt-4 grid gap-3 max-w-xl">
+      <input class="border p-2 rounded" type="email" name="email" placeholder="Your email" required>
+      <textarea class="border p-2 rounded" name="message" rows="5" placeholder="Your message" required></textarea>
+      <button class="border px-4 py-2 rounded" type="submit">Send</button>
+    </form> -->
+  </section>
+
+  <footer class="text-center text-sm text-zinc-500 py-6 border-t">
     © 2025 Sri Pavan Gali
   </footer>
 </body>
 </html>
+
