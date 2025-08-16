@@ -56,69 +56,68 @@
 
   <!-- PROJECTS -->
   <section id="projects" class="mx-auto max-w-5xl px-4 pb-14">
-    <h2 class="text-2xl font-semibold mb-6">Projects &amp; Experience</h2>
+    <h2 class="text-2xl font-semibold mb-6">Projects</h2>
 
-    <!-- DC Metro -->
-    <article class="card p-6 mb-6">
-      <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
-        <h3 class="text-lg font-semibold">
-          DC Metro Ridership Dashboard
-          <a href="https://www.gopagify.com/page?id=2PACX-1vTTMRV6LdKnciMgPQ1AwH9cz2n4h_IKPRElvw0DWWGN-0v57eGP8vn1q0FySeghftrDZLp1O9F_M2kG" target="_blank" rel="noopener">(Link)</a>
-        </h3>
-        <div class="text-sm font-bold text-black">Feb 2025</div>
-      </div>
-      <ul class="mt-3 list-disc pl-5 space-y-1 text-zinc-800">
-        <li>Interactive dashboard for 2019–2024 ridership; filters by year, month, and transit mode.</li>
-        <li>Mode toggles (Bus, Rail, Grand Total) with contextual event markers.</li>
-        <li>Dynamic insights table for busiest/quietest days; validated aggregates vs. source.</li>
-        <li>EDA, cleaning, and documentation; versioned updates with Git.</li>
-      </ul>
-    </article>
+    <div class="grid sm:grid-cols-2 gap-6">
+      <!-- Card component: hover highlight + overlay CTA -->
+      <!-- DC Metro -->
+      <a href="https://www.gopagify.com/page?id=2PACX-1vTTMRV6LdKnciMgPQ1AwH9cz2n4h_IKPRElvw0DWWGN-0v57eGP8vn1q0FySeghftrDZLp1O9F_M2kG" target="_blank" rel="noopener"
+         class="group relative block card p-6 transition transform hover:-translate-y-0.5 hover:shadow-2xl">
+        <div class="flex items-baseline justify-between">
+          <h3 class="text-lg font-semibold">DC Metro Ridership Dashboard</h3>
+          <span class="text-sm font-bold text-black">Feb 2025</span>
+        </div>
+        <!-- subtle subtitle line if needed -->
+        <div class="mt-2 text-xs text-zinc-500">Dashboard • Python/Dash</div>
+        <!-- Hover overlay CTA -->
+        <div class="pointer-events-none absolute inset-0 rounded-[1rem] bg-black/60 opacity-0 transition-opacity duration-200 group-hover:opacity-100"></div>
+        <div class="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+          <span class="px-4 py-2 rounded-full bg-white text-zinc-900 text-sm font-medium shadow">View project →</span>
+        </div>
+      </a>
 
-    <!-- Cardiovascular -->
-    <article class="card p-6 mb-6">
-      <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
-        <h3 class="text-lg font-semibold">
-          Cardiovascular Disease Risk Analysis
-          <a href="https://drive.google.com/file/d/1I6V5Gf4QKilPrFdMQq8BjDOsfcX_nMCI/view?usp=drive_link" target="_blank" rel="noopener">(Link)</a>
-        </h3>
-        <div class="text-sm font-bold text-black">Nov 2023</div>
-      </div>
-      <ul class="mt-3 list-disc pl-5 space-y-1 text-zinc-800">
-        <li>Analyzed U.S. NHIS data across age, gender, region, and lifestyle risk factors.</li>
-        <li>R/Python visuals: heatmaps, bars, pies; MySQL comparisons across regions.</li>
-      </ul>
-    </article>
+      <!-- Cardiovascular -->
+      <a href="https://drive.google.com/file/d/1I6V5Gf4QKilPrFdMQq8BjDOsfcX_nMCI/view?usp=drive_link" target="_blank" rel="noopener"
+         class="group relative block card p-6 transition transform hover:-translate-y-0.5 hover:shadow-2xl">
+        <div class="flex items-baseline justify-between">
+          <h3 class="text-lg font-semibold">Cardiovascular Disease Risk Analysis</h3>
+          <span class="text-sm font-bold text-black">Nov 2023</span>
+        </div>
+        <div class="mt-2 text-xs text-zinc-500">Report • R/Python/MySQL</div>
+        <div class="pointer-events-none absolute inset-0 rounded-[1rem] bg-black/60 opacity-0 transition-opacity duration-200 group-hover:opacity-100"></div>
+        <div class="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+          <span class="px-4 py-2 rounded-full bg-white text-zinc-900 text-sm font-medium shadow">View project →</span>
+        </div>
+      </a>
 
-    <!-- Fortune 500 -->
-    <article class="card p-6 mb-6">
-      <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
-        <h3 class="text-lg font-semibold">
-          Fortune 500 Insights: A Data‑Driven Exploration
-          <a href="https://sripavan1.wordpress.com/" target="_blank" rel="noopener">(Link)</a>
-        </h3>
-        <div class="text-sm font-bold text-black">Aug 2024</div>
-      </div>
-      <ul class="mt-3 list-disc pl-5 space-y-1 text-zinc-800">
-        <li>Analyzed 8 years of Fortune 500 data to uncover sector growth, revenue surges, and HQ shifts.</li>
-        <li>Built Tableau dashboards highlighting revenue and profit patterns across U.S. states.</li>
-      </ul>
-    </article>
+      <!-- Fortune 500 -->
+      <a href="https://sripavan1.wordpress.com/" target="_blank" rel="noopener"
+         class="group relative block card p-6 transition transform hover:-translate-y-0.5 hover:shadow-2xl">
+        <div class="flex items-baseline justify-between">
+          <h3 class="text-lg font-semibold">Fortune 500 Insights</h3>
+          <span class="text-sm font-bold text-black">Aug 2024</span>
+        </div>
+        <div class="mt-2 text-xs text-zinc-500">Blog • Tableau/SQL</div>
+        <div class="pointer-events-none absolute inset-0 rounded-[1rem] bg-black/60 opacity-0 transition-opacity duration-200 group-hover:opacity-100"></div>
+        <div class="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+          <span class="px-4 py-2 rounded-full bg-white text-zinc-900 text-sm font-medium shadow">View project →</span>
+        </div>
+      </a>
 
-    <!-- Adidas -->
-    <article class="card p-6 mb-6">
-      <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2">
-        <h3 class="text-lg font-semibold">
-          Adidas Sales Analysis | Tableau Dashboard
-          <a href="https://public.tableau.com/app/profile/pavan.g1561/viz/shared/ZXHZWDSGT" target="_blank" rel="noopener">(Link)</a>
-        </h3>
-        <div class="text-sm font-bold text-black">Jan 2024</div>
-      </div>
-      <ul class="mt-3 list-disc pl-5 space-y-1 text-zinc-800">
-        <li>Interactive Tableau dashboard for Adidas sales by region, year, category, and sales method.</li>
-        <li>Geographic heat map for state‑level sales; KPIs for total and product‑level performance.</li>
-      </ul>
-    </article>
+      <!-- Adidas -->
+      <a href="https://public.tableau.com/app/profile/pavan.g1561/viz/shared/ZXHZWDSGT" target="_blank" rel="noopener"
+         class="group relative block card p-6 transition transform hover:-translate-y-0.5 hover:shadow-2xl">
+        <div class="flex items-baseline justify-between">
+          <h3 class="text-lg font-semibold">Adidas Sales Analysis</h3>
+          <span class="text-sm font-bold text-black">Jan 2024</span>
+        </div>
+        <div class="mt-2 text-xs text-zinc-500">Tableau Public • KPIs</div>
+        <div class="pointer-events-none absolute inset-0 rounded-[1rem] bg-black/60 opacity-0 transition-opacity duration-200 group-hover:opacity-100"></div>
+        <div class="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+          <span class="px-4 py-2 rounded-full bg-white text-zinc-900 text-sm font-medium shadow">View project →</span>
+        </div>
+      </a>
+    </div>
   </section>
 
   <!-- ABOUT -->
@@ -160,4 +159,3 @@
   </footer>
 </body>
 </html>
-
